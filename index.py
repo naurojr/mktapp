@@ -16,4 +16,7 @@ st.set_page_config(
 	page_icon=":toolbox:",
 )
 
+with open('./config.yaml') as file:
+	config = yaml.load(file, Loader=SafeLoader)
+
 st.title("Marketing Tools :toolbox:", anchor=None)
