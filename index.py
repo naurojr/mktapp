@@ -11,7 +11,9 @@ from pathlib import Path
 import yaml
 from yaml.loader import SafeLoader
 
+st.set_page_config(
+	page_title="Mosaic Companies Marketing Tools",
+	page_icon=":toolbox:",
+)
+
 st.title("Marketing Tools :toolbox:", anchor=None)
-
-
-st.title('Alltomator')
