@@ -11,4 +11,7 @@ from pathlib import Path
 import yaml
 from yaml.loader import SafeLoader
 
+st.title("Marketing Tools :toolbox:", anchor=None)
+
+
 st.title('Alltomator')
