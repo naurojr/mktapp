@@ -25,7 +25,7 @@ from reportlab.graphics import renderPDF, renderPM
 from svglib.svglib import svg2rlg
 
 #BARCODE GENERATOR
-from barcode import UPCA
+from barcode import upc
 
 # USED TO CALCULATE PRECISION DIVISION
 from decimal import *
