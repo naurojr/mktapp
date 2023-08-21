@@ -30,3 +30,14 @@ authenticator = stauth.Authenticate(
 	)
 
 name, authentication_status, username = authenticator.login('Login', 'main')
+
+if authentication_status:
+	authenticator.logout('Logout', 'main', key='unique_key')
+	st.write(f'Welcome *{name}*')
+
+	uploaded_file = st.file_uploader("Choose a CSV file", type=['xlsx','csv'])
+
+elif authentication_status is False:
+	st.error('Username/password is incorrect')
+elif authentication_status is None:
+	st.warning('Please enter your username and password')
