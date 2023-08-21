@@ -1,11 +1,11 @@
 import os
 
-from barcode import generate
+from barcode import UPCA
 from reportlab.graphics import renderPDF, renderPM
 from svglib.svglib import svg2rlg
 
 def create_upc_barcode(upc_string):
-	box_barcode = generate('UPCA',upc_string, output=upc_string)
+	box_barcode = UPCA(upc_string, output=upc_string)
 	
 	f = open(box_barcode, "r+")
 	svg_content = f.read()
